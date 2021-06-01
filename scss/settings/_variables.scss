@@ -2,20 +2,26 @@
 /*          Typography              */
 /*------------- --------------------*/
 
-$previewFontHeading: Rubik, 'Avenir Next', Helvetica, Arial, sans-serif;
-$previewFontBody: Karla, 'Avenir Next', Helvetica, Arial, sans-serif;
-$editorFont: 'IBM Plex Mono', Menlo, Monaco, 'Courier New', monospace;
+$previewFontHeading: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+  'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+$previewFontBody: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+  'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+$editorFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+  'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+$monoFont: 'IBM Plex Mono', Menlo, Monaco, 'Courier New', monospace;
 
 /*-----------------------------*/
 /*          Colors             */
 /*-----------------------------*/
 
-$primaryLightBlue: #82aaff;
+$primaryLightBlue: #79a0f0;
 $primaryDarkBlue: hsl(207, 95%, 8%); // #011627
 $primaryLightGray: #d6deeb;
 $primaryLimeGreen: #c5e478;
-$primaryYellow: #ffeb95;
+$primaryYellow: #d6b279;
 $primaryTeal: #7fdbca;
+$primaryPurple: #c792ea;
+$primaryPink: #ff79c6;
 $primaryHighlight: hsla(169, 43%, 38%, 0.8); // #388b7c
 
 /*-------------------------------------*/
@@ -37,6 +43,7 @@ $primaryHighlight: hsla(169, 43%, 38%, 0.8); // #388b7c
   --font-family-editor: #{$editorFont};
   --font-family-preview: #{$previewFontBody};
   --font-family-preview-heading: #{$previewFontHeading};
+  --font-monospace: #{$monoFont};
 }
 
 .theme-light,
@@ -55,7 +62,7 @@ $primaryHighlight: hsla(169, 43%, 38%, 0.8); // #388b7c
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: #470000;
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
-  --text-accent: #{$primaryYellow};
+  --text-accent: #{$primaryPurple};
   --text-accent-hover: #8be9fd;
   --text-normal: #f8f8f2;
   --text-muted: #f8f8f2;
@@ -73,14 +80,14 @@ $primaryHighlight: hsla(169, 43%, 38%, 0.8); // #388b7c
   --scrollbar-active-thumb-bg: #282a36;
   --scrollbar-bg: #282a36;
   --scrollbar-thumb-bg: #282a36;
-  --text-title-h1: #ff79c6;
+  --text-title-h1: #{$primaryYellow};
   --text-title-h2: #{$primaryLightBlue};
   --text-title-h3: #{$primaryLimeGreen};
   --text-title-h4: #ffb86c;
   --text-title-h5: #50fa7b;
   --text-title-h6: #8be9fd;
   --inline-code: #bd93f9;
-  --code-block: #8be9fd;
+  --code-block: #d3d7dc;
   --pre-code: #44475a;
   --blockquote-border: #ffb86c;
   --vim-cursor: #ff5555;

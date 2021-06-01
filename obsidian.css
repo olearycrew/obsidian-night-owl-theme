@@ -21,9 +21,10 @@
   --font-size-h4: 20px;
   --font-size-h5: 19px;
   --font-size-h6: 18px;
-  --font-family-editor: IBM Plex Mono, Menlo, Monaco, Courier New, monospace;
-  --font-family-preview: Karla, Avenir Next, Helvetica, Arial, sans-serif;
-  --font-family-preview-heading: Rubik, Avenir Next, Helvetica, Arial, sans-serif; }
+  --font-family-editor: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+  --font-family-preview: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+  --font-family-preview-heading: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+  --font-monospace: IBM Plex Mono, Menlo, Monaco, Courier New, monospace; }
 
 .theme-light,
 .theme-dark {
@@ -43,7 +44,7 @@
   --background-modifier-error-rgb: 61, 0, 0;
   --background-modifier-error-hover: #470000;
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
-  --text-accent: #ffeb95;
+  --text-accent: #c792ea;
   --text-accent-hover: #8be9fd;
   --text-normal: #f8f8f2;
   --text-muted: #f8f8f2;
@@ -56,20 +57,20 @@
   --text-on-accent: #bd93f9;
   --interactive-normal: #ffb86c;
   --interactive-hover: #ff5555;
-  --interactive-accent: #ffeb95;
+  --interactive-accent: #d6b279;
   --interactive-accent-rgb: 123, 108, 217;
   --interactive-accent-hover: #ff5555;
   --scrollbar-active-thumb-bg: #282a36;
   --scrollbar-bg: #282a36;
   --scrollbar-thumb-bg: #282a36;
-  --text-title-h1: #ff79c6;
-  --text-title-h2: #82aaff;
+  --text-title-h1: #d6b279;
+  --text-title-h2: #79a0f0;
   --text-title-h3: #c5e478;
   --text-title-h4: #ffb86c;
   --text-title-h5: #50fa7b;
   --text-title-h6: #8be9fd;
   --inline-code: #bd93f9;
-  --code-block: #8be9fd;
+  --code-block: #d3d7dc;
   --pre-code: #44475a;
   --blockquote-border: #ffb86c;
   --vim-cursor: #ff5555;
@@ -258,7 +259,7 @@ img:hover {
 /***************************************/
 /* code blocks in preview */
 pre code {
-  font-family: monaco !important;
+  font-family: IBM Plex Mono, Menlo, Monaco, Courier New, monospace !important;
   font-size: var(--font-size-code) !important;
   padding: 6px !important;
   line-height: normal;
@@ -588,7 +589,7 @@ span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
 
 /* Editor CodeBlock TEXT Appearance */
 .cm-s-obsidian pre.HyperMD-codeblock {
-  font-family: monaco !important;
+  font-family: IBM Plex Mono, Menlo, Monaco, Courier New, monospace !important;
   font-size: var(--font-size-code) !important;
   padding: 1px !important;
   display: block;
