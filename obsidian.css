@@ -55,9 +55,13 @@
   --text-selection: #6272a4;
   /* Chromium precess this color with alpha channel */
   --text-on-accent: #bd93f9;
+  --pink-lighter: #ff32a8;
+  --yellow-dark: #805d27;
+  --yellow-darker: #2a1f0d;
+  --yellow-very-dark: #2b281e;
   --interactive-normal: #ffb86c;
   --interactive-hover: #ff5555;
-  --interactive-accent: #d6b279;
+  --interactive-accent: #805d27;
   --interactive-accent-rgb: 123, 108, 217;
   --interactive-accent-hover: #ff5555;
   --scrollbar-active-thumb-bg: #282a36;
@@ -716,6 +720,14 @@ ul .task-list-item ul::before {
 .view-header-icon,
 .view-action {
   color: var(--text-faint); }
+
+button.mod-cta {
+  background-color: var(--yellow-very-dark);
+  color: white; }
+
+button.mod-cta:hover {
+  background-color: var(--yellow-dark);
+  color: white; }
 
 .cm-header-1 {
   font-family: var(--font-family-editor);

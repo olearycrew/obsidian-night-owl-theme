@@ -23,6 +23,7 @@ $primaryTeal: #7fdbca;
 $primaryPurple: #c792ea;
 $primaryPink: #ff79c6;
 $primaryHighlight: hsla(169, 43%, 38%, 0.8); // #388b7c
+$veryDarkYellow: rgb(43, 40, 30);
 
 /*-------------------------------------*/
 /*          CSS Variables              */
@@ -72,9 +73,13 @@ $primaryHighlight: hsla(169, 43%, 38%, 0.8); // #388b7c
   --text-error-hover: #ff79c6;
   --text-selection: #6272a4; /* Chromium precess this color with alpha channel */
   --text-on-accent: #bd93f9;
+  --pink-lighter: #{darken($primaryPink, 14%)};
+  --yellow-dark: #{darken($primaryYellow, 33%)};
+  --yellow-darker: #{darken($primaryYellow, 55%)};
+  --yellow-very-dark: #{$veryDarkYellow};
   --interactive-normal: #ffb86c;
   --interactive-hover: #ff5555;
-  --interactive-accent: #{$primaryYellow};
+  --interactive-accent: #{darken($primaryYellow, 33%)};
   --interactive-accent-rgb: 123, 108, 217;
   --interactive-accent-hover: #ff5555;
   --scrollbar-active-thumb-bg: #282a36;
